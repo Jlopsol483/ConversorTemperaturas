@@ -28,6 +28,13 @@ public class Menu {
                 System.out.print("Inserte la temperatura deseada:");
                 temp= teclado.nextFloat();
                 //Insertar F-C
+                System.out.print("Introduce la temperatura en grados Fahrenheit: ");
+                double fahrenheit = teclado.nextDouble();
+
+                double celsius = (fahrenheit - 32) / 1.8;
+
+                System.out.printf("%.2f °F equivalen a %.2f °C.%n", fahrenheit, celsius);
+
             }
             else if (opcion==3) {
                 System.out.print("Inserte la temperatura deseada:");
