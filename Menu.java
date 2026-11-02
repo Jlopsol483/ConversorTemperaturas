@@ -1,6 +1,9 @@
 import java.util.Scanner;
 public class Menu {
-    
+    public static void CelFar(float temp) {
+       temp=(float)(temp*1.8)+32;
+        System.out.println("La temperatura introducida, en farenheit, es la siguiente: "+temp);
+    }
     public static void main(String[] args) {
         Scanner teclado= new Scanner (System.in);
         int opcion=0;
@@ -16,15 +19,19 @@ public class Menu {
             while (opcion!=1 && opcion!=2 && opcion!=3 && opcion!=4) {
                 System.out.print("Opción invalida. Intentelo de nuevo:");
             }
-            System.out.print("Inserte la temperatura deseada:");
-            temp= teclado.nextFloat();
             if (opcion==1) {
-                //insertar C-F
+                System.out.print("Inserte la temperatura deseada:");
+                temp= teclado.nextFloat();
+                CelFar(temp);
             }
             else if (opcion==2) {
+                System.out.print("Inserte la temperatura deseada:");
+                temp= teclado.nextFloat();
                 //Insertar F-C
             }
             else if (opcion==3) {
+                System.out.print("Inserte la temperatura deseada:");
+                temp= teclado.nextFloat();
                 //Insertar C-K
             }
             System.out.println("");
