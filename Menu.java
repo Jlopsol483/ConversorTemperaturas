@@ -27,7 +27,6 @@ public class Menu {
             else if (opcion==2) {
                 System.out.print("Inserte la temperatura deseada:");
                 temp= teclado.nextFloat();
-                //Insertar F-C
                 System.out.print("Introduce la temperatura en grados Fahrenheit: ");
                 double fahrenheit = teclado.nextDouble();
 
