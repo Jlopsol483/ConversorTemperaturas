@@ -4,10 +4,6 @@ public class Menu {
        temp=(float)(temp*1.8)+32;
         System.out.println("La temperatura introducida, en farenheit, es la siguiente: "+temp);
     }
-    public static void CelKel(float temp) {
-        temp = temp + 273.15f;
-        System.out.println("La temperatura introducida, en Kelvin, es la siguiente: " + temp);
-    }
     public static void main(String[] args) {
         Scanner teclado= new Scanner (System.in);
         int opcion=0;
@@ -36,7 +32,7 @@ public class Menu {
             else if (opcion==3) {
                 System.out.print("Inserte la temperatura deseada:");
                 temp= teclado.nextFloat();
-                Menu.CelKel(temp);
+                //Insertar C-K
             }
             System.out.println("");
 
