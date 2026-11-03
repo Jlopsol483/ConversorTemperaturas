@@ -25,7 +25,6 @@ public class Menu {
                 CelFar(temp);
             }
             else if (opcion==2) {
-                System.out.print("Inserte la temperatura deseada:");
                 temp= teclado.nextFloat();
                 System.out.print("Introduce la temperatura en grados Fahrenheit: ");
                 double fahrenheit = teclado.nextDouble();
